@@ -2,8 +2,8 @@
 pragma solidity ^0.8.19;
 
 import {LinkToken} from "../test/mocks/LinkToken.sol";
-import {Script, console2} from "forge-std/Script.sol";
-import {VRFCoordinatorV2_5Mock} from "@chainlink/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
+import {Script, console2} from "../lib/forge-std/src/Script.sol";
+import {VRFCoordinatorV2_5Mock} from "../lib/chainlink-brownie-contracts/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
 
 abstract contract CodeConstants {
     uint96 public MOCK_BASE_FEE = 0.25 ether;

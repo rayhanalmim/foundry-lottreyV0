@@ -5,10 +5,10 @@ pragma solidity ^0.8.19;
 import {DeployRaffle} from "../../script/DeployRaffle.s.sol";
 import {Raffle} from "../../src/Raffle.sol";
 import {HelperConfig} from "../../script/HelperConfig.s.sol";
-import {Test, console} from "forge-std/Test.sol";
-import {Vm} from "forge-std/Vm.sol";
-import {StdCheats} from "forge-std/StdCheats.sol";
-import {VRFCoordinatorV2_5Mock} from "@chainlink/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
+import {Test, console} from "../../lib/forge-std/src/Test.sol";
+import {Vm} from "../../lib/forge-std/src/Vm.sol";
+import {StdCheats} from "../../lib/forge-std/src/StdCheats.sol";
+import {VRFCoordinatorV2_5Mock} from "../../lib/chainlink-brownie-contracts/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
 import {CreateSubscription} from "../../script/Interactions.s.sol";
 
 contract RaffleTest is StdCheats, Test {
