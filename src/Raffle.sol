@@ -128,7 +128,7 @@ contract Raffle is VRFConsumerBaseV2Plus, AutomationCompatibleInterface {
     }
 
     /**
-     * @dev Once `checkUpkeep` is returning `true`, this function is called
+     * @dev Once `checkUpkeep` is returning `true`, this function is called 
      * and it kicks off a Chainlink VRF call to get a random winner.
      */
     function performUpkeep(bytes calldata /* performData */ ) external override {
