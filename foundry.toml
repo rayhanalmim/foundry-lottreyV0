@@ -15,4 +15,17 @@ sepolia = { key = "${ETHERSCAN_API_KEY}" }
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
 
-# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+# See more config options at the Foundry GitHub repository:
+# https://github.com/foundry-rs/foundry/tree/master/config
+# 
+# Example of additional configuration options:
+# 
+# [profile.release]
+# optimize = true
+# 
+# [profile.dev]
+# src = "contracts"
+# out = "build"
+# 
+# [ffi]
+# allowed = true
